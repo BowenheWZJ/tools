@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .validation-image {
+    height:19px; 
+    width:20px;
+    display: none;
+}
+
+/* Error styling */
+.validation-error {
+    background-color: #ff0000;
+    background-image: url('/img/redcross.jpg');
+}
+
+/* Success styling */
+.validation-success {
+    background-color: #00ff00;
+    background-image: url('/img/greenbock.jpg');
+}
+    </style>
+</head>
+<body>
+    <form name="test" method="post" action="">Name
+        <br />
+        <input name="name1" type="text" onblur="checkNames()" />
+        <br />Name agian
+        <br />
+        <input name="name2" type="text" onblur="checkNames()" />
+        <div id="nameValidation" class="validation-image"></div>
+        <br />Username
+        <br />
+        <input name="username" type="text" />
+        <br />
+    </form>
+    
+    <script>
+
+function checkNames() {
+    // Find the validation image div
+    var validationElement = document.getElementById('nameValidation');
+    // Get the form values
+    var name1 = document.forms["test"]["name1"].value;
+    var name2 = document.forms["test"]["name2"].value;
+    // Reset the validation element styles
+    validationElement.style.display = 'none';
+    validationElement.className = 'validation-image';
+    // Check if name2 isn't null or undefined or empty
+    if (name2) {
+        // Show the validation element
+        validationElement.style.display = 'inline-block';
+        // Choose which class to add to the element
+        validationElement.className += 
+            (name1 == name2 ? ' validation-success' : ' validation-error');
+    }
+}
+    </script>
+</body>
+</html>

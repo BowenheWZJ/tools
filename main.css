@@ -1,0 +1,137 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+body {
+    margin: 0;
+
+}
+.header_container {
+    border-bottom: 4px solid #086AD8;
+    background: white;
+}
+.header_main {
+    width: 100%;
+    margin: 0;
+    display: flex;
+}
+.header_main .header_logo {
+    padding: 5%;
+    width: 80%;
+    overflow: hidden;
+}
+.header_main .header_logo img {
+    width: 100%;
+}
+.header_main .menu_icon {
+    width: 20%;
+    overflow: hidden;
+    text-align: right;
+    padding: 5%;
+}
+.header_main .menu_icon img {
+    width: 70%;
+}
+.menu_drawer {
+    width: 100%;
+    display: none;
+}
+.menu_drawer .menu_drawer_item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.menu_drawer .menu_drawer_item .menu_drawer_item_icon {
+    width: 30%;
+    text-align: right;
+}
+.menu_drawer .menu_drawer_item .menu_drawer_item_text {
+    width: 70%;
+    font-size: 35px;
+}
+
+.logo_conainer {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+.logo_conainer img {
+    width: 100%;
+}
+.main_form {
+    margin-top: 15%;
+    width: 80%;
+    margin-left: 10%;
+}
+.main_form .form_item {
+    width: 100%;
+    display: flex;
+}
+.form_item .form_item_icon {
+    width: 10%;
+}
+.form_item .form_item_icon img {
+    width: 60%;
+    padding-top: 20%;
+    vertical-align: center;
+}
+.form_item .form_item_input {
+    width: 90%;
+}
+.form_item .form_item_input input {
+    width: 88%;
+    margin-bottom: 15%;
+    font-size: 25px;
+    padding: 4% 6%;
+    border-radius: 15px;
+    border: 1px solid #AAAAAA;
+}
+.form_check {
+    text-align: center;
+    font-size: 35px;
+}
+.submit_btn {
+    margin-top: 5%;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    background: #72AAE9;
+    color: white;
+    border-radius: 15px;
+    padding: 5% 0;
+    margin-bottom: 10%;
+}
+.redir_container{
+    text-align: center;
+}
+.redirect_btn{
+    margin-top: 5%;
+    width: 40%;
+    margin-left: 5%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    background: #ffffff;
+    color: white;
+    border-radius: 15px;
+    padding: 2% 0;
+    margin-bottom: 10%;
+}
+.validation-image {
+    height:19px; 
+    width:20px;
+    display: none;
+}
+
+/* Error styling */
+.validation-error {
+    background-color: #ff0000;
+    background-image: url('./hello_files/感叹号.png');
+}
+
+/* Success styling */
+.validation-success {
+    background-color: #00ff00;
+    background-image: url('./hello_files/感叹号.png');
+}

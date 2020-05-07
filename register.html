@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://webzilla.co.nz/covid/customer_record.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="main.css">
+<title>Register</title>
+<style>
+    body {
+    background-image: url('https://webzilla.co.nz/covid/img/bg3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+</style>
+</head>
+<body data-gr-c-s-loaded="true">
+<div class="header_container">
+<div class="header_main">
+<div class="header_logo">
+<img src="./hello_files/logo_long.jpg">
+</div>
+<div class="menu_icon">
+<img src="./hello_files/menu.jpg">
+</div>
+</div>
+<div class="menu_drawer">
+<a href="https://webzilla.co.nz/covid/customer_record.php">
+<div class="menu_drawer_item">
+<span class="menu_drawer_item_icon">
+<img src="./hello_files/log-in.jpg">
+</span>
+<span class="menu_drawer_item_text">
+商家登录
+</span>
+</div>
+</a>
+<a href="https://webzilla.co.nz/covid/customer_record.php">
+<div class="menu_drawer_item">
+<span class="menu_drawer_item_icon">
+<img src="./hello_files/login_register.jpg">
+</span>
+<span class="menu_drawer_item_text">
+商家注册
+</span>
+</div>
+</a>
+</div>
+</div>
+
+
+
+
+
+<title>hello</title>
+
+
+
+<div class="background"></div>
+<div class="main_container">
+<div class="logo_conainer">
+<img src="./hello_files/logo_trans.jpg">
+</div>
+<form class="main_form" name="reg" action="register.php" method="post">
+    <div class="form_item">
+        <div class="form_item_icon">
+            <img src="./hello_files/商店.png">
+        </div>
+        <div class="form_item_input">
+            <input type="text" placeholder="Shop Name/店名">
+        </div>
+    </div>
+    <div class="form_item">
+        <div class="form_item_icon">
+            <img src="./hello_files/地址.png">
+        </div>
+        <div class="form_item_input">
+            <input type="text" placeholder="Shop Address/地址">
+        </div>
+    </div>
+    <div class="form_item">
+        <div class="form_item_icon">
+            <img src="./hello_files/邮箱.png">
+        </div>
+        <div class="form_item_input">
+            <input type="text" placeholder="Email/邮箱">
+        </div>
+    </div>
+    <div class="form_item">
+        <div class="form_item_icon">
+            <img src="./hello_files/电话.png">
+        </div>
+        <div class="form_item_input">
+            <input type="text" placeholder="Phone/电话">
+        </div>
+    </div>
+    <div class="form_item">
+        <div class="form_item_icon">
+            <img src="./hello_files/密码.png">
+        </div>
+        <div class="form_item_input">
+            <input name ="pass1" type="password" placeholder="Password/密码" onblur="checkValue()">
+        </div>
+    </div>
+    <div class="form_item">
+        <div class="form_item_icon">
+            <div id="nameValidation" class="validation-image"></div>
+        </div>
+        <div class="form_item_input">
+            <input name="pass2" type="password" placeholder="Re-Enter Password/确认密码" onblur="checkValue()">
+            
+        </div>
+    </div>
+
+    
+    <input type="button" class="submit_btn" value="Submit" >
+</form>
+</div>
+
+<script>
+    function checkValue() {
+    // Find the validation image div
+    var validationElement = document.getElementById('nameValidation');
+    // Get the form values
+    var name1 = document.forms["reg"]["pass1"].value;
+    var name2 = document.forms["reg"]["pass2"].value;
+    // Reset the validation element styles
+    validationElement.style.display = 'none';
+    validationElement.className = 'validation-image';
+    // Check if name2 isn't null or undefined or empty
+    if (name2) {
+        // Show the validation element
+        validationElement.style.display = 'inline-block';
+        // Choose which class to add to the element
+        validationElement.className += 
+        (name1 == name2 ? ' validation-success' : ' validation-error');
+    }
+}
+</script>
+</body>
+</html>
