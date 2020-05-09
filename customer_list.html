@@ -59,6 +59,9 @@ body {
 
 <div class="background"></div>
     <div class="main_container">
+        <div class="exit">
+           <a href="customer.html"> <img src="./hello_files/退出.png" alt=""></a>
+        </div>
         <div class="logo_conainer">
             <img src="./hello_files/logo_trans.jpg">
         </div>
@@ -67,42 +70,51 @@ body {
             <h1>Customer Record</h2>
         </div>
 
-        <div class="customers">
-            <a href="customer_list.html?shop_id=value1&date=value2">
-                <div class="customer_item">
-                    <h1>
-                        2020/01/01
-                    </h1>
-                    <div class="number_customer">
-                        <img src="./hello_files/customer_item.png" alt="">
-                        <h1>20</h1>
+        <div class="customers_list">
+            
+                <div class="customer_list_item" onclick="showMore(this.id);" id="0">
+                    <div class="frow">
+                        <h1>
+                            time
+                        </h1>
+                        <div class="more_customer">
+                            
+                            <h1> name</h1>
+                            <img src="./hello_files/向下箭头.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="more_info">
+                        <hr/>
+                        <div class= "phone">
+                            <img src="./hello_files/电话.png" alt="">
+                            <h1>0224112551</h1>
+                        </div>
+                        <div class= "address">
+                            <img src="./hello_files/地址.png" alt="">
+                            <h1>28 killybegs dr</h1>
+                        </div>
+
                     </div>
                 </div>
-            </a>
-            <div class="customer_item">
-                <h1>
-                    2020/01/01
-                </h1>
-                <div class="number_customer">
-                    <img src="./hello_files/customer_item.png" alt="">
-                    <h1>20</h1>
-                </div>
-            </div>
-
-
-            <div class="customer_item">
-                <h1>
-                    2020/01/01
-                </h1>
-                <div class="number_customer">
-                    <img src="./hello_files/customer_item.png" alt="">
-                    <h1>20</h1>
-                </div>
-            </div>
+           
+           
             
         </div>
     </div>
 </div>
+<script>
+     function showMore(id){
+        //alert(id)
+        let x=document.getElementsByClassName("more_info")[id]
+        if (x.style.display === "none") {
+             x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
 
+    }
+
+</script>
 </body>
 </html>

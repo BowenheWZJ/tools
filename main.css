@@ -135,3 +135,117 @@ body {
     background-color: #00ff00;
     background-image: url('./hello_files/感叹号.png');
 }
+
+
+/* customer pages*/
+.customer_title{
+    width: 40%;
+    margin-left: 27%;
+    margin-top: 10%;
+    display: flex;
+}
+.customer_title h1{
+    font-size: 50px;
+    color: #AAAAAA;
+}
+.customers{
+    width: 50%;
+    margin-left: 27%;
+    margin-top: 10%;
+    
+    
+}
+
+
+.customer_item{
+    display: flex;
+    border: #ffffff;
+    box-shadow: 5px 10px #333333;
+    border-radius: 10px;
+    background-color: #ffffff;
+    height: 100px;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 10%;
+}
+
+.number_customer{
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+.number_customer h1{
+    font-size: 40px;
+}
+.number_customer img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.more_info{
+    display: none;
+}
+.phone {
+    display: flex;
+    
+}
+.address{
+    display: flex;
+}
+.address img{
+    width: 80px;
+    height: 80px;
+    margin-right: 20%;
+}
+.phone img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20%
+}
+
+.customer_list_item{
+    
+    border: #ffffff;
+    box-shadow: 5px 10px #333333;
+    border-radius: 10px;
+    background-color: #ffffff;
+  
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 10%;
+}
+.more_customer{
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+.more_customer h1{
+    font-size: 30px;
+}
+.more_customer img{
+    width: 80px;
+    height: 80px;
+}
+.frow{
+    display: flex;
+   
+}
+.customers_list{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10%;
+    
+    
+}
+
+.exit{
+    position: fixed;
+}
+.exit img{
+    width: 100px;
+    height: 100px;
+    margin-left: 80px;
+}
