@@ -118,18 +118,8 @@ body {
     padding: 2% 0;
     margin-bottom: 10%;
 }
-.validation-image {
-    height:19px; 
-    width:20px;
-    display: none;
-}
 
-/* Error styling */
-.validation-error {
-    background-color: #ff0000;
-    background-image: url('./hello_files/感叹号.png');
-}
-
+<<<<<<< HEAD
 /* Success styling */
 .validation-success {
     background-color: #00ff00;
@@ -249,3 +239,5 @@ body {
     height: 100px;
     margin-left: 80px;
 }
+=======
+>>>>>>> 9c094632491e32a1c7052031d40bf4bd46ca269b
